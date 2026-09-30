@@ -1,0 +1,35 @@
+{
+  "name": "ai-sdk-utils",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Highly experimental AI SDK toolkit features",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepack": "unbuild",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@ai-sdk/provider-utils": "^5",
+    "ai": "^7"
+  },
+  "devDependencies": {
+    "@ai-sdk/provider-utils": "^5.0.51",
+    "@antfu/eslint-config": "^9.5.1",
+    "ai": "^7.0.122",
+    "eslint": "^10.11.0",
+    "typescript": "^6.0.3",
+    "unbuild": "^3.6.1"
+  }
+}
